@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.SideBar {
+  width: 200px;
+  background-color: beige;
+}
+
+.MemoContainer {
+  background-color: darkgray;
+  flex: 1;
+}
+
+.MemoContainer .title {
+  width: 100%;
+  font-size: 2rem;
+  box-sizing: border-box;
+}
+
+.MemoContainer .content {
+  width: 100%;
+  font-size: 1.1rem;
+  min-height: 600px;
+  box-sizing: border-box;
+}
+
+.MemoItem {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.MemoItem.selected {
+  background-color: gray;
+  font-weight: 500px;
+}
